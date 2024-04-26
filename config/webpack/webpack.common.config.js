@@ -11,10 +11,10 @@ module.exports = {
   name: 'webpack-common-config',
   context: SOURCE_DIR,
   entry: {
-    common: ['./js/app', './js/dev/icons', './sass/app']
+    common: ['./js/app', './js/dev/icons', './scss/app']
   },
   resolve: {
-    extensions: ['.js', '.sass', '.png', '.jpg', '.svg'],
+    extensions: ['.js', '.scss', '.sass', '.css', '.png', '.jpg', '.svg'],
     alias: {
       '@': SOURCE_DIR
     }

@@ -47,7 +47,7 @@ const postcssLoader = {
 const sassLoader = {
   loader: 'sass-loader',
   options: {
-    additionalData: `$isDev: ${IS_DEV_MODE}`
+    additionalData: `$isDev: ${IS_DEV_MODE};`
   }
 }
 

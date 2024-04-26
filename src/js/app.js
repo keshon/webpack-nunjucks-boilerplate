@@ -1,18 +1,25 @@
-import audio from '@/audio/click.mp3'
-import Cursor from './libs/Cursor'
-import greeting from './libs/greeting'
+import audio from "@/audio/click.mp3";
+import Cursor from "./libs/Cursor";
+import greeting from "./libs/greeting";
 
 /* The initial HTML document has been completely loaded and parsed */
-document.addEventListener('DOMContentLoaded', () => {})
+document.addEventListener("DOMContentLoaded", () => {
+
+});
 
 /**
  * The whole page has been completely loaded, including
  * all dependent resources (stylesheets and images)
  */
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   /** Greetings, Sire! */
-  greeting({ name: 'janeRivas', email: 'solovyev.a@icloud.com' })
+  greeting({ name: "janeRivas", email: "solovyev.a@icloud.com" });
 
   /** Cusrom cursor */
-  new Cursor({ audio })
-})
+  new Cursor({ audio });
+
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("h1").innerText = "Bye!";
+  });
+});
+
